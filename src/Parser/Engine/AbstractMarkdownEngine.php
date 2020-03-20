@@ -39,8 +39,10 @@ abstract class AbstractMarkdownEngine {
 	 * 
 	 * @param string $text
 	 * @param Markdown $markdown
+	 * @param array $options
 	 * @return string
 	 */
-	public abstract function output($text);
+	public abstract function output($text, Markdown $markdown, 
+			array $options = []);
 }
 

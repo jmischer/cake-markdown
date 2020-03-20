@@ -45,10 +45,11 @@ class Markdown {
 	/**
 	 * 
 	 * @param string $text
+	 * @param array $options
 	 * @return string
 	 */
-	public function parse($text) {
-		return $this->getEngine()->output($text);
+	public function parse($text, array $options = []) {
+		return $this->getEngine()->output($text, $this, $options);
 	}
 }
 
